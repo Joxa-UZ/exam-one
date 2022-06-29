@@ -8,8 +8,8 @@
     <title>Pixer | Javohir Rustamov</title>
 
     <!-- <link rel="stylesheet" href="./css/normalize.css"> -->
-    <link rel="stylesheet" href="./css/main.mini.css">
-    <!-- <link rel="stylesheet" href="./css/main.css"> -->
+    <!-- <link rel="stylesheet" href="./css/main.mini.css"> -->
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
@@ -23,7 +23,18 @@
                 <div class="site-navbar">
                     <ul class="navbar-list">
                         <li class="navbar-list-item"><a class="navbar-link" href="./index.html">Bosh sahifa</a></li>
-                        <li class="navbar-list-item"><a class="navbar-link" href="./services.html">Xizmatlar</a></li>
+                        <li class="navbar-list-item">
+                            <a class="navbar-link" href="./services.html">Xizmatlar</a>
+                            <ul class="drop-list">
+                                <li class="drop-list-item">
+                                    <a href="./create-web-site.html" class="drop-list-item-link navbar-link">Vebsayt</a>
+                                </li>
+                                <li class="drop-list-item"><a href="./telegram-bot.html" class="drop-list-item-link navbar-link">Telegram bot</a></li>
+                                <li class="drop-list-item"><a href="./smm.html" class="drop-list-item-link navbar-link">SMM</a></li>
+                                <li class="drop-list-item"><a href="./grafic-design.html" class="drop-list-item-link navbar-link">Grafik dizayn</a></li>
+                                <li class="drop-list-item"><a href="./crm.html" class="drop-list-item-link navbar-link">CRM tizim</a></li>
+                            </ul>
+                        </li>
                         <li class="navbar-list-item"><a class="navbar-link" href="./portfolio.html">Portfolio</a></li>
                         <li class="navbar-list-item"><a class="navbar-link" href="./team.html">Jamoa</a></li>
                         <li class="navbar-list-item"><a class="navbar-link" href="./blog.html">Blog</a></li>
@@ -40,7 +51,7 @@
     <!-- main start -->
     <main>
         <!-- hero section start -->
-        <section>
+        <section class="hero-section">
             <div class="container">
                 <div class="hero">
                     <div class="hero-info">
@@ -54,7 +65,7 @@
                             </p>
                         </div>
 
-                        <a class="section-buttons hero-link" href="#" target="blank">Xizmatlar bilan tanishish</a>
+                        <a class="section-buttons hero-link" href="#services" target="blank">Xizmatlar bilan tanishish</a>
                     </div>
 
                     <iframe class="hero-video" width="560" height="315"
@@ -68,7 +79,7 @@
         <!-- hero section finish -->
 
         <!-- services section start -->
-        <section class="services">
+        <section class="services" id="services">
             <div class="container">
                 <div class="services-top">
                     <h2 class="services-top-theme">Xizmatlar</h2>
@@ -116,7 +127,7 @@
                 </ul>
 
                 <div class="services-under-link">
-                    <a class="hero-link section-buttons" href="#" target="blank">Buyurtma berish</a>
+                    <a class="hero-link section-buttons" href="#order" target="blank">Buyurtma berish</a>
                     <a class="services-under-link-item" href="#" target="blank">Xizmatlar sahifasiga o’tish</a>
                 </div>
             </div>
@@ -198,7 +209,7 @@
                 </ol>
 
                 <div class="how-we-button">
-                    <a class="section-buttons hero-link" href="#">Buyurtma berish</a>
+                    <a class="section-buttons hero-link" href="#order">Buyurtma berish</a>
                 </div>
 
             </div>
@@ -206,7 +217,7 @@
         <!-- how we work section finish -->
 
         <!-- order section start -->
-        <section class="order">
+        <section class="order" id="order">
             <div class="container">
                 <div class="order-top">
                     <h2 class="order-top-theme">Buyurtma berish</h2>
