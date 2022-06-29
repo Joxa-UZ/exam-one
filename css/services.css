@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 :root {
     --fontregular: 400;
     --font700: 700;
@@ -80,7 +87,34 @@ header {
     -ms-flex-align: center;
     align-items: center;
 }
-
+.drop-list-item{
+    padding: 8px 16px;
+    /* margin-top: 8px; */
+}
+.navbar-list-item:nth-child(1):hover .drop-list{
+    display: block;
+}
+.navbar-list-item:nth-child(1){
+    position: relative;
+}
+.drop-list{
+    position: absolute;
+    left: -15px;
+    top: 58px;
+    z-index: -1;
+    padding: 0;
+    margin: 0;
+    width: 130px;
+    display: none;
+    list-style: none;
+    background-color: #fff;
+}
+.drop-list-item:hover{
+    background-color: var(--colorblue);
+}
+.drop-list-item:hover  .drop-list-item-link{
+    color: var(--colorwhite);
+}
 .navbar-list {
     margin: 0 8px 0 0;
     padding: 0;
@@ -184,12 +218,15 @@ header {
 .services-list-item{
     margin-right: auto;
     margin-left: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 804px;
     margin-bottom: 64px;
     padding: 32px 32px;
     background-color: var(--colorwhite);
-    box-shadow: 0px 10px 16px #0000001f;
+    -webkit-box-shadow: 0px 10px 16px #0000001f;
+            box-shadow: 0px 10px 16px #0000001f;
     border-radius: 5px;
 }
 .services-list-item::before{
@@ -353,7 +390,9 @@ header {
     background: #F3F3F3;
     border-radius: 5px;
     border: none;
-    appearance: none;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
     background-image: url(../images/services-form-back.svg);
     background-repeat: no-repeat;
     /* background-size: 15px; */

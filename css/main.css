@@ -1,5 +1,12 @@
 /*
 * Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+/*
+* Prefixed by https://autoprefixer.github.io
 * PostCSS: v8.4.12,
 * Autoprefixer: v10.4.4
 * Browsers: last 4 version
@@ -102,16 +109,6 @@ header {
     list-style: none;
     border-bottom: 3px solid transparent;
 }
-.drop-list-item{
-    padding: 8px 16px;
-    /* margin-top: 8px; */
-}
-.navbar-list-item:nth-child(2):hover .drop-list{
-    display: block;
-}
-.navbar-list-item:nth-child(2){
-    position: relative;
-}
 .drop-list{
     position: absolute;
     left: -15px;
@@ -124,6 +121,17 @@ header {
     list-style: none;
     background-color: #fff;
 }
+.drop-list-item{
+    padding: 8px 16px;
+    /* margin-top: 8px; */
+}
+.navbar-list-item:nth-child(2):hover .drop-list{
+    display: block;
+}
+.navbar-list-item:nth-child(2){
+    position: relative;
+}
+
 .drop-list-item:hover{
     background-color: var(--colorblue);
 }
@@ -626,7 +634,9 @@ section {
     background: #F3F3F3;
     border-radius: 5px;
     border: none;
-    appearance: none;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
     background-image: url(../images/sort-down-solid.svg);
     background-repeat: no-repeat;
     background-size: 15px;
